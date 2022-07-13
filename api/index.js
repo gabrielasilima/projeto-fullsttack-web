@@ -1,7 +1,7 @@
 'use strict'
 
 var mongoose = require('mongoose');
-var app = require('../projeto-interfaces-web/api/app');
+var app = require('./app');
 var port = 3800;
 
 // Conexão com o banco de dados
