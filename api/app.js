@@ -1,21 +1,20 @@
-'use strict'
+'use strict';
 
-var express = require('express');
-var bodyParser = require('body-parser');
-
-var app = express();
-
-// Carregar Rotas
-var usuario_rotas = require(/rota/usuario);
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Cors
+// Importando rotas
+const rotasIndex = require('./rota/index');
+const rotasUsuario = require('./rota/usuario');
 
-// Rotas
-app.use(api, usuario_rotas);
+// Carregar rotas
+app.use(rotasIndex);
+app.use(rotasUsuario);
 
 // Exportações
 module.exports = app;

@@ -1,5 +1,5 @@
 {
-    "name": "api",
+    "name": "projeto-web-fullstack",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -7,16 +7,25 @@
         "start": "nodemon index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Gabriela da Silva Lima",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gabrielasilima/projeto-fullsttack-web.git"
+    },
+    "author": "Gabriela Lima",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/gabrielasilima/issues"
+    },
+    "homepage": "https://github.com/gabrielasilima/projeto-fullsttack-web.git#readme",
     "dependencies": {
+        "@types/express": "^4.17.13",
         "bcrypt-nodejs": "^0.0.3",
         "body-parser": "^1.20.0",
         "connect-multiparty": "^2.2.0",
         "express": "^4.18.1",
         "jwt-simple": "^0.5.6",
         "moment": "^2.29.3",
-        "mongoose": "^6.4.0"
+        "mongoose": "^6.3.5"
     },
     "devDependencies": {
         "nodemon": "^2.0.16"

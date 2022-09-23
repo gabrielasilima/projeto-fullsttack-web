@@ -1,11 +1,10 @@
-'use strict'
+'use strict';
 
-var express = require('express');
-var UsuarioControle = (controle / usuario);
+const express = require('express');
+const usuario = require('../controle/usuario');
+const router = express.Router();
 
-var api = express.Router();
+router.get('/usuario', usuario.inicio);
+router.get('/usuario/teste', usuario.teste);
 
-api.get('home', UsuarioControle.home);
-api.get('test', UsuarioControle.test);
-
-module.exports = api;
+module.exports = router;
